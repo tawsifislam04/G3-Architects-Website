@@ -2,6 +2,39 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Shared Style */
+
 *{
     font-family: "Work Sans", sans-serif;
+}
+
+/* Header Style */
+
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 50px 240px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+
+}
+
+nav ul{
+    display: flex;
+    gap: 36px;
+}
+
+nav li{
+    list-style: none;
+    color: #424242;
+    font-weight: 500;
+    font-size: 1.125rem;
 }
