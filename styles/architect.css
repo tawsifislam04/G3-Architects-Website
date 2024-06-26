@@ -18,6 +18,7 @@ body{
 header{
     background-color: rgba(255, 144, 14, 0.1);
     padding: 50px 240px;
+    margin-bottom: 0px;
 }
 
 nav{
@@ -87,7 +88,68 @@ nav li{
     width: 100%;
 }
 
+/* main styles */
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Teams Styles */
+
+.teams{
+    margin: 85px 61px 130px 61px ;
+    display: flex;
+    align-items: center;
+    gap: 73px;
+}
+
+.teams-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive Media Quaries */
+
 
 /* Mobile Device */
 
