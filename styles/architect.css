@@ -127,6 +127,39 @@ main{
     color: #FF900E;
 }
 
+/* Features Styles */
+
+.features{
+    display: flex;
+    gap: 54px;
+}
+
+.features .section-title{
+    border-left: #FF900E solid 5px;
+    padding-left: 21px;
+    margin-bottom: 8px;
+}
+
+.features-contant .light-gray-text{
+    margin-bottom: 30px;
+}
+
+.features .card{
+    padding: 30px;
+    box-shadow: 10px 10px 30px 10px;
+}
+
+.features .card h2{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #131313;
+    margin: 0px;
+}
+
+.features .card p{
+    margin-top: 10px;
+}
+
 /* Facts Styles */
 
 .facts{
