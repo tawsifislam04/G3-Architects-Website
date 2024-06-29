@@ -13,6 +13,19 @@ body{
     padding: 0;
 }
 
+.light-gray-text{
+    font-size: 1rem;
+    line-height: 26px;
+    font-weight: 400;
+    color: #727272;
+}
+
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313
+}
+
 /* Header Style */
 
 header{
@@ -25,12 +38,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.nav-title{
-    font-size: 2.8rem;
-    font-weight: 700;
-
 }
 
 nav ul{
@@ -46,7 +53,6 @@ nav li{
 }
 
 /* Banner Styles */
-
 .banner-content{
     max-width: 862px;
     margin: 0 auto;
@@ -57,13 +63,6 @@ nav li{
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
-}
-
-.banner-description{
-    font-size: 1rem;
-    line-height: 26px;
-    font-weight: 400;
-    color: #727272;
 }
 
 .primary-btn{
@@ -80,7 +79,6 @@ nav li{
 }
 
 .banner-img{
-    width: 100%;
     margin-top: 0px;
 }
 
@@ -107,7 +105,66 @@ main{
 .teams-img{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 24px;
+    gap: 1.5rem;
+}
+
+.teams-title{
+    margin-bottom: 0px;
+}
+
+.teams-description{
+    margin-bottom: 0px;
+    margin-top: 24px;
+}
+
+.light-span{
+    font-weight: 500;
+    color: #727272;
+}
+
+.orange-span{
+    font-weight: 700;
+    color: #FF900E;
+}
+
+/* Facts Styles */
+
+.facts-title{
+    margin-bottom: 24px;
+}
+
+.facts-description{
+    margin-top: 0;
+    max-width: 542px;
+    margin-bottom: 0;
+}
+
+.facts .card-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.facts .card{
+    border: #FF900E 1px solid;
+    border-radius: 8px;
+    padding: 45px 36px 45px 35px;
+}
+
+.facts .card-stats{
+    font-size: 2.8rem;
+    color: #424242;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.facts .card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #727272;
+    margin-top: 5px;
 }
 
 
@@ -146,9 +203,7 @@ main{
 
 
 
-
-
-/* Responsive Media Quaries */
+/* Responsive Media Queries */
 
 
 /* Mobile Device */
@@ -164,15 +219,37 @@ main{
         flex-direction: column;
         gap: 26px;
     }
+    .teams{
+        flex-direction: column-reverse;
+        margin: 85px 20px 130px 20px;
+        gap: 50px;
+    }
+    .teams-img{
+        grid-template-columns: 1fr;
+        gap :1rem;
+    }
+    .facts .card-container{
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 20px;
+    }
+    .facts-title,.facts-description{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
-/* Tab or Mediam Device */
+/* Tab or Medium Device */
 
-@media screen and (min-width: 576px) and (max-width: 960px) {
+@media screen and (min-width: 576px) and (max-width: 992px) {
     header{
         padding: 50px;
     }
     nav{
         flex-direction: column;
     }
-}
+    .teams{
+        flex-direction: column-reverse;
+    }
+}   
