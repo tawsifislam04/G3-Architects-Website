@@ -129,6 +129,10 @@ main{
 
 /* Facts Styles */
 
+.facts{
+    margin-bottom: 180px;
+}
+
 .facts-title{
     margin-bottom: 24px;
 }
@@ -166,6 +170,14 @@ main{
     color: #727272;
     margin-top: 5px;
 }
+
+/* Sponsors Styles */
+
+.sponsors{
+    text-align: center;
+    margin-top: 0;
+}
+
 
 
 
