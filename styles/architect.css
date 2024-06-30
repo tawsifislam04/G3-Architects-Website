@@ -13,6 +13,12 @@ body{
     padding: 0;
 }
 
+main
+{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .light-gray-text{
     font-size: 1rem;
     line-height: 26px;
@@ -88,10 +94,6 @@ nav li{
 
 /* main styles */
 
-main{
-    max-width: 1440px;
-    margin: 0 auto;
-}
 
 /* Teams Styles */
 
@@ -269,37 +271,22 @@ main{
     width: 200px;
 }
 
+/* Footer Styles */
 
+footer{
+    max-width: 1440px;
+    margin: 130px auto 216px auto;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+    border: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer p{
+    padding: 39px 410px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #424242;
+}
 
 
 
@@ -332,13 +319,17 @@ main{
 
     .teams{
         flex-direction: column-reverse;
-        margin: 85px 20px 130px 20px;
+        margin: 85px 10px 130px 10px;
         gap: 50px;
     }
 
     .teams-img{
         grid-template-columns: 1fr;
         gap :1rem;
+    }
+
+    .teams-img img{
+        width: 100%;
     }
 
     .features-img img{
@@ -364,6 +355,15 @@ main{
     {
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    footer{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    footer p{
+        padding: 14px;
     }
 }
 
@@ -404,5 +404,13 @@ main{
     .experience{
         position: static;
         width: auto;
+    }
+
+    footer{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    footer p{
+        padding: 20px;
     }
 }   
