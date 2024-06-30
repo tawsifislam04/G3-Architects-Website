@@ -131,7 +131,8 @@ main{
 
 .features{
     display: flex;
-    gap: 54px;
+    gap: 146px;
+    margin-bottom: 0;
 }
 
 .features .section-title{
@@ -146,7 +147,8 @@ main{
 
 .features .card{
     padding: 30px;
-    box-shadow: 10px 10px 30px 10px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
 }
 
 .features .card h2{
@@ -160,10 +162,47 @@ main{
     margin-top: 10px;
 }
 
+.features-img{
+    width: 100%;
+}
+
+.features-img img{
+    height: 90%;
+    width: 100%;
+}
+
+.experience{
+    background-color: #FF900E;
+    text-align: center;
+    width: 342px;
+    border-radius: 8px;
+    border: 0;
+    padding: 45px 42px;
+    position: relative;
+    bottom: 80px;
+    right: 80px;
+}
+
+.experience h3{
+    margin: 0;
+    padding-bottom: 0px;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.experience p{
+    margin-top: 0px;
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
 /* Facts Styles */
 
 .facts{
     margin-bottom: 180px;
+    margin-top: 130px;
 }
 
 .facts-title{
@@ -274,31 +313,55 @@ main{
     header{
         padding: 23px;
     }
+
+    .banner-title{
+        font-size: 3.5rem;
+    }
+
     nav,
-    .sponsors-img
+    .sponsors-img,
+    .features
     {
         flex-direction: column;
     }
+
     nav >ul{
         flex-direction: column;
         gap: 26px;
     }
+
     .teams{
         flex-direction: column-reverse;
         margin: 85px 20px 130px 20px;
         gap: 50px;
     }
+
     .teams-img{
         grid-template-columns: 1fr;
         gap :1rem;
     }
+
+    .features-img img{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .experience{
+        position: static;
+        width: auto;
+    }
+
     .facts .card-container{
         flex-direction: column;
         padding-left: 20px;
         padding-right: 20px;
         gap: 20px;
     }
-    .facts-title,.facts-description{
+
+    .facts-title,
+    .facts-description,
+    .features
+    {
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -311,11 +374,35 @@ main{
         padding: 50px;
     }
     nav,
-    .sponsors-img
+    .sponsors-img,
+    .features
     {
         flex-direction: column;
     }
     .teams{
         flex-direction: column-reverse;
+    }
+
+    .features-img img{
+        margin: 0;
+        width: 100%;
+    }
+
+    .features,
+    .facts
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .facts .card-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+
+    .experience{
+        position: static;
+        width: auto;
     }
 }   
